@@ -2,12 +2,11 @@ package com.chess.piece;
 
 import com.chess.settings.Square;
 
-public class King extends Piece {
+public class Queen extends Piece {
 	//상속 type player position
-	public boolean hasMoved = false;
 	
-	public King() {
-		this.type = "King";
+	public Queen() {
+		this.type = "Queen";
 	}
 	
 	@Override
@@ -20,6 +19,7 @@ public class King extends Piece {
 		
 	}//말을 새로운 위치로 이동
 	
+
 	
 	
 	
