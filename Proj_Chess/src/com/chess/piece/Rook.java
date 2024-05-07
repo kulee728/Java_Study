@@ -2,12 +2,12 @@ package com.chess.piece;
 
 import com.chess.settings.Square;
 
-public class King extends Piece {
+public class Rook extends Piece {
 	//상속 type player position
-	public boolean hasMoved = false;
+	private boolean hasMoved=false;
 	
-	public King() {
-		this.type = "King";
+	public Rook() {
+		this.type = "Rook";
 	}
 	
 	@Override
@@ -18,7 +18,7 @@ public class King extends Piece {
 	public void setHasMoved(boolean hasMoved) {
 		this.hasMoved = hasMoved;
 	}
-	
+
 	
 	
 	

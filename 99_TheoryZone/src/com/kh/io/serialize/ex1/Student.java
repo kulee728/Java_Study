@@ -14,6 +14,8 @@ public class Student implements Serializable {
 	
 	private String name;
 	private int age;
+	transient public String KSSN;
+	
 	public Student() {
 		
 	}
