@@ -1,0 +1,12 @@
+package com.construct.pattern.FactoryMethod.ImageConverterFactory;
+import com.construct.pattern.FactoryMethod.imageConverter.ImageConverter;
+import com.construct.pattern.FactoryMethod.imageConverter.JPGImageConverter;
+
+public class JPGConverterFactory extends ImageConverterFactory {
+
+	@Override
+	public ImageConverter createImageConverter() {
+		return new JPGImageConverter();
+	}
+
+}

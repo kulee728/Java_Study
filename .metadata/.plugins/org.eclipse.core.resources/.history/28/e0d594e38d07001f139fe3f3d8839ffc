@@ -1,0 +1,6 @@
+package com.construct.pattern.FactoryMethodEx;
+
+public abstract class ImageConverterFactory {
+	abstract ImageConverter createImageConverter();
+	
+}

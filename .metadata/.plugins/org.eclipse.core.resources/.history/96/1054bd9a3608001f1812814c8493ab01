@@ -1,0 +1,22 @@
+package com.pattern.construct.FactoryMethod.game.unit;
+
+public abstract class Unit implements UnitAbilities {
+	public String name;
+	public int attackDamage;
+	public int attackRange;
+	public int movementSpeed;
+	
+	public Unit(String name, int attackDamage, int attackRange, int movementSpeed) {
+		this.name = name;
+		this.attackDamage = attackDamage;
+		this.attackRange = attackRange;
+		this.movementSpeed = movementSpeed;
+	}
+
+	public abstract void attack();
+	public abstract void move();
+	public abstract void specialAbility();
+		
+	
+	
+}

@@ -1,0 +1,13 @@
+package com.pattern.construct.FactoryMethod.game.probability;
+
+import java.util.Random;
+
+public abstract class RandomValueCalculator {
+	public Random random = new Random();
+	public String message;
+	
+	public abstract void probabilityToValues(double probability);
+	public abstract String getMessage();
+
+
+}

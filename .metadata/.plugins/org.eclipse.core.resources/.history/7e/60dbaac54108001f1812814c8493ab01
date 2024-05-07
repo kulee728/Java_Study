@@ -1,0 +1,30 @@
+package com.pattern.construct.FactoryMethod.game.run;
+
+import java.util.Scanner;
+
+public class GameUnitClient {
+
+	private void consoleCleaner() {
+		for(int i=0;i<50;i++)
+			System.out.println();
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("---------- Archer & Cavalry ---------- ");
+		while(true) {
+			System.out.print("플레이어 1의 직업을 선택해주세요 (1:궁수, 2:기병) : ");
+			try {
+				int unitClass = sc.nextInt();
+				
+			}
+			catch(Exception E) {
+				consoleCleaner();
+				System.out.println("비 정상적인 접근입니다....처음부터 입력해주세요.");
+				System.out.println("아무 키 입력시 첫 화면으로 돌아갑니다.");
+				sc.next();
+			}
+		}
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.design.behaviorPattern.observer.observer;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StockUser implements Observer {
+	private String name;
+	private double accountBalance;
+	private int stockQuantity;
+	private double stockPrice;
+	
+	public StockUser(String name, double accountBalance) {
+		this.name = name;
+		this.accountBalance = accountBalance;
+		stockQuantity = 0;
+		stockPrice = 0;
+	}
+	
+	@Override
+	public void update(String stockName, double price) {
+		stockPrice = price;
+		double asset = accountBalance + stockQuantity*stockPrice;
+		System.out.println(name+"님, 주식 가격이 변동되었습니다. "+price+" "
+				+ "현재 예금 잔액은 "+accountBalance+", 총 자산 평가액은 "+asset+"$ 입니다.");
+	}
+	
+	public void buyStock(int quantity) {
+		System.out.println(name+"님 " +quantity+"주 구매 완료");
+		System.out.println("현재 예금 잔액은 "+accountBalance+", 총 보유주 "+stockQuantity+"주 입니다.");
+	}
+
+}

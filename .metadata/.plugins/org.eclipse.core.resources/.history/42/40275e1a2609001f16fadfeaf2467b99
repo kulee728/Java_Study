@@ -1,0 +1,40 @@
+package pre.properties;
+
+import java.util.Comparator;
+
+public class Movies implements Comparator<Movies>{
+	private String name;
+	private int rate;
+	public String getName() {
+		return name;
+	}
+
+	public int getRate() {
+		return rate;
+	}
+
+	public int getAdmissions() {
+		return admissions;
+	}
+
+	private int admissions;
+	
+	@Override
+	public int compare(Movies o1, Movies o2) {
+		//return o1.rate - o2.rate
+		//return o1.getRate()-o2.getRate();
+		return Integer.compare(o1.rate, o2.rate);
+	}
+
+	public Movies(String name, int rate, int admissions) {
+		this.name = name;
+		this.rate = rate;
+		this.admissions = admissions;
+	}
+
+	@Override
+	public String toString() {
+		return "Movies [name=" + name + ", rate=" + rate + ", admissions=" + admissions + "]";
+	}
+
+}

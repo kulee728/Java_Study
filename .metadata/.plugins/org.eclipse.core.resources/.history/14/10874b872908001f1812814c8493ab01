@@ -1,0 +1,10 @@
+package com.pattern.construct.FactoryMethod.game;
+import java.util.Random;
+
+public interface Unit {
+	Random random = new Random();
+	void attack();
+	void move();
+	void specialAbility(); //유닛 : 제품
+	
+}

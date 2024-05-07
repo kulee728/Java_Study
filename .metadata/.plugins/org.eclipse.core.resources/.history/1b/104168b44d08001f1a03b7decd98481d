@@ -1,0 +1,52 @@
+package com.pattern.construct.FactoryMethod.game.unit;
+
+import com.pattern.construct.FactoryMethod.game.probability.AttackGenerator;
+import com.pattern.construct.FactoryMethod.game.probability.MovingGenerator;
+
+public class UnitCavalry extends Unit{
+
+	public UnitCavalry(String name, int attackDamage, int attackRange, int movementSpeed) {
+		super(name, attackDamage, attackRange,movementSpeed);
+	}
+
+	@Override
+	public void attack() {
+		AttackGenerator atkG = new AttackGenerator(this.attackDamage);
+		int resultDamage = atkG.getResultDamage();
+		String attackMessage = atkG.getMessage();
+		System.out.println("기병 "+name+"! 창을 들어 공격합니다!");
+		System.out.println("최대 사정거리 : "+attackRange);
+		System.out.println(attackMessage+" "+resultDamage +"의 피해를 입혔습니다! (공격력 : "+attackDamage+")");
+	}
+
+	@Override
+	public void move() {
+		MovingGenerator mvg = new MovingGenerator(movementSpeed);
+		String moveMessage = mvg.getMessage();
+		System.out.println("기병 "+name +","+" 이동을 시도합니다.");
+		System.out.println(moveMessage);
+	}
+
+	@Override
+	public void specialAbility() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getClassName() {
+		// TODO Auto-generated method stub
+		return "Cavalry";
+	}
+
+	@Override
+	public String toString() {
+		String str = "";
+		str = "직업 : Cavalry\n"
+				+"공격력 : "+attackDamage+ "\n"
+				+"사정거리 : "+attackRange+ "\n"
+				+"이동속도 : "+movementSpeed+ "\n";
+		return str;
+	}
+
+}

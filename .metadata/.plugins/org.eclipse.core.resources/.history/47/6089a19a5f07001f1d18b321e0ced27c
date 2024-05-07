@@ -1,0 +1,16 @@
+package com.logger;
+
+import java.util.*;
+//import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+public class LoggerEx1 {
+	//private static final Logger logUtil = Logger.getLogger(LoggerEx1.class.getName());
+	private static final Logger log = LogManager.getLogger(LoggerEx1.class);
+	public static void main(String[] args) {
+		log.info("info Test");
+		log.warning("info message");
+	}
+
+}

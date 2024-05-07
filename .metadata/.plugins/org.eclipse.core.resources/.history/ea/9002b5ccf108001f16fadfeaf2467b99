@@ -1,0 +1,27 @@
+package com.design.behaviorPattern.observer.observer;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StockUser implements Observer {
+	private String name;
+	private double accountBalance;
+	private Map<String, Integer> stockMap; //"주식이름","보유량"
+	
+	public StockUser(){
+		stockMap = new HashMap<>();
+	}
+	
+	public StockUser(double accountBalance) {
+		this.accountBalance = accountBalance;
+		stockMap = new HashMap<>();
+	}
+	
+	@Override
+	public void update(String stockName, double price) {
+		System.out.println();
+	}
+	
+	
+
+}

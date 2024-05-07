@@ -1,0 +1,14 @@
+package com.logger;
+
+import java.util.*;
+import java.util.logging.Logger;
+import org.apache.logging.log4j.*;
+
+public class LoggerEx1 {
+	private static final Logger logUtil = Logger.getLogger(LoggerEx1.class.getName());
+	//private static final Logger logLog4j = LogManager.get
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package pre.properties2;
+
+import java.io.FileOutputStream;
+import java.util.Properties;
+
+public class PropTest {
+
+	public static void fileSave(Properties p) {
+		FileOutputStream fis = new FileOutputStream("Drama.xml");
+		p.setProperty("1", "순풍산부인과,1990,400");
+		p.setProperty("2", "선덕여왕,2007,80");
+		p.setProperty("3", "주몽,2005,110");
+		p.setProperty("5", "육룡이나르샤,2020,50");
+		p.setProperty("7", "뿌리깊은나무,2015,24");
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

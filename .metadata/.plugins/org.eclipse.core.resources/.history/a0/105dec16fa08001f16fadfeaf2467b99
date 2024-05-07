@@ -1,0 +1,6 @@
+package com.design.behaviorPattern.observer.observer;
+
+public interface Observer {
+	void update (double price);
+	void buyStock(int quantity);
+}

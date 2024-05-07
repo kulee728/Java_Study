@@ -1,0 +1,50 @@
+package com.pattern.construct.FactoryMethod.game.probability;
+
+import java.util.Random;
+
+public class AttackCalculator {
+	private Random random;
+	private String attackMessage;
+	private int resultDamage;
+	private double attackCoefficient;
+	
+	public AttackCalculator(int attackDamage) {
+		random = new Random();
+		double probability = this.random.nextDouble();
+		messageCoefficientGenerator(probability);
+		this.resultDamage = (int) (attackDamage*attackCoefficient);
+	}
+	
+	private void messageCoefficientGenerator(double probability) {	
+		if(probability>0.95) {
+			this.attackMessage = "급소에 맞았다! ";
+			this.attackCoefficient = 2.0 + random.nextDouble()*1.5;
+		}
+		else if(probability>0.75) {
+			this.attackMessage = "크리티컬! ";
+			this.attackCoefficient = 1.3 + random.nextDouble()*0.2;
+		}
+		else if(probability>0.25) {
+			this.attackMessage = "";
+			this.attackCoefficient = 0.9 + random.nextDouble()*0.2;
+		}
+		else if(probability>0.05) {
+			this.attackMessage = "빗맞았다! ";
+			this.attackCoefficient = 0.3 + random.nextDouble()*0.3;
+		}
+		else {
+			this.attackMessage = "완전히 빗나갔다! ";
+			this.attackCoefficient = 0;
+		}
+	}
+
+	public String getAttackMessage() {
+		return attackMessage;
+	}
+
+	public int getResultDamage() {
+		return resultDamage;
+	}
+	
+	
+}

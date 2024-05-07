@@ -1,0 +1,8 @@
+package com.pattern.construct.FactoryMethod.game;
+
+public class UnitSpec {
+	private String name;
+	private int attackDamage;
+	private int attackRange;
+	private int movementSpeed;
+}

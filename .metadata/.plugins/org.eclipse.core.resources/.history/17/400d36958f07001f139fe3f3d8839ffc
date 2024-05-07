@@ -1,0 +1,5 @@
+package com.construct.pattern.FactoryMethod.imageConverter;
+
+public interface ImageConverter {
+	void convert(String inputFile, String outputFile);
+}

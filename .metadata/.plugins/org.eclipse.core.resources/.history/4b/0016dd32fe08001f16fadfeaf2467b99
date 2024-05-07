@@ -1,0 +1,5 @@
+package com.design.behaviorPattern.observer.blognews.subject;
+
+public class BlogSite {
+
+}

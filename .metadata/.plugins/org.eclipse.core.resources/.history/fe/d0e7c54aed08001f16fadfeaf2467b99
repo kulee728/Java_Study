@@ -1,0 +1,9 @@
+package com.design.behaviorPattern.observer.observer;
+
+public interface Observer {
+	void update (String stockName,double price);
+	void buyStocks(String stockName);
+	void buyStocks(String stockName,int amount);
+	void sellStocks(String stockName);
+	void sellStocks(String stockName,int amount);
+}

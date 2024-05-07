@@ -1,0 +1,7 @@
+package com.pattern.construct.FactoryMethod.game.probability;
+
+public interface RandomValueCalculator {
+	public void probabilityToValues(double probability);
+	public String getMessage();
+	
+}

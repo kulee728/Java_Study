@@ -1,0 +1,5 @@
+package com.pattern.construct.FactoryMethod.game.unitfactory;
+
+public abstract class UnitFactory {
+
+}

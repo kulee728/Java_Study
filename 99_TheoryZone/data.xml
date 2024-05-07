@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Fruits comment</comment>
+<entry key="1">apple,1200,22</entry>
+<entry key="2">banana,1200,17</entry>
+<entry key="3">cherry,1200,120</entry>
+<entry key="4">watermellon,1200,5</entry>
+<entry key="5">strawberry,1200,70</entry>
+<entry key="6">coconut,1200,8</entry>
+</properties>

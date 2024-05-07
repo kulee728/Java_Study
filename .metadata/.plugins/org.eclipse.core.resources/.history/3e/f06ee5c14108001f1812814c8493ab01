@@ -1,0 +1,10 @@
+package com.pattern.construct.FactoryMethod.game.run;
+
+public class GameUnitClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

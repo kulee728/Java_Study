@@ -1,0 +1,9 @@
+package com.design.behaviorPattern.observer.blognews.subject;
+
+import com.design.behaviorPattern.observer.blognews.observer.Subscriber;
+
+public interface Blog {
+	void NotifiySubscriber(String articleTitle);
+	void removeSubscriber(Subscriber s);
+	void addSubscriber(Subscriber s);
+}
