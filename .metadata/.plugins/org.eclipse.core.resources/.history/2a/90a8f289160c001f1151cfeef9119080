@@ -14,7 +14,7 @@ public class PropTest {
 
 	public static void fileSave(Properties p) throws IOException {
 
-		//fos.close();
+		fos.close();
 		
 	}
 	
