@@ -5,6 +5,11 @@ import com.chess.piece.Piece;
 public class Board {
 	private Square[][] squares; // 8x8 크기의 객체 이차원 배열, 각 칸에는 말이 위치할 수있다.
 	public void setup() {
+		squares = new Square[8][8];
+		for(int i=0;i<8;i++) {
+			squares[i] = new Square[8];
+		}
+		
 		
 	}//보드를 초기화 하고 초기 말을 배치
 	
