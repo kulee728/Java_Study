@@ -1,5 +1,0 @@
-package com.design.behaviorPattern.observer.stockmarket;
-
-public class StockExchange {
-
-}

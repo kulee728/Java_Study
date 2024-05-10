@@ -16,5 +16,8 @@ public class Square {
 	public void setPiece(Piece piece) {
 		this.piece = piece;
 	}
+	public char getPieceChar() {
+		return piece.toChar();
+	}
 }
 //구현 완료

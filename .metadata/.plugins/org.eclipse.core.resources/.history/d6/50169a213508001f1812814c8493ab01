@@ -1,8 +1,0 @@
-package com.pattern.construct.FactoryMethod.game;
-
-public interface UnitAbilities {
-	void attack();
-	void move();
-	void specialAbility(); //유닛 : 제품
-	
-}

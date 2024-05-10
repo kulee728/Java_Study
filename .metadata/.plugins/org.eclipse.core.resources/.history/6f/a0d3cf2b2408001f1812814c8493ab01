@@ -1,5 +1,0 @@
-package com.pattern.construct.FactoryMethod.game;
-
-public class Unit {
-
-}

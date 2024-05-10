@@ -1,5 +1,0 @@
-package com.pattern.construct.FactoryMethod.game.attacker;
-
-public interface Calculator {
-
-}

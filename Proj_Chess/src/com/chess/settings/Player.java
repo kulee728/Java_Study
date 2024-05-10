@@ -11,5 +11,7 @@ public class Player {
 	public void makeMove() {
 		
 	}
-	
+	private int makeMove(int a) {
+		return 1;
+	}
 }

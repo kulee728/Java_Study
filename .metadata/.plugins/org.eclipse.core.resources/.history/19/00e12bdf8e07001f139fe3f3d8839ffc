@@ -1,5 +1,0 @@
-package com.construct.pattern.ImageConverterFactory;
-
-public class JPGConverterFactory {
-
-}

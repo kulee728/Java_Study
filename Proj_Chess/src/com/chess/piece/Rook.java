@@ -12,6 +12,7 @@ public class Rook extends Piece {
 	
 	@Override
 	public boolean isValidMove(Square destination) {
+		return hasMoved;
 		
 	}//해당 destination 으로 현재 말이 이동할 수 있는지 확인
 	
@@ -19,7 +20,10 @@ public class Rook extends Piece {
 		this.hasMoved = hasMoved;
 	}
 
-	
+	@Override
+	public char toChar() {
+		return 'R';
+	}
 	
 	
 	

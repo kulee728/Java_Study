@@ -1,5 +1,0 @@
-package com.design.behaviorPattern.observer.blognews.observer;
-
-public class Subscriber {
-
-}

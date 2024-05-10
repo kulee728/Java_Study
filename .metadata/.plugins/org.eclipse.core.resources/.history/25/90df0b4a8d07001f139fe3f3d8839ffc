@@ -1,5 +1,0 @@
-package com.construct.pattern.FactoryMethodEx;
-
-public interface ImageConverter {
-	void convert()
-}

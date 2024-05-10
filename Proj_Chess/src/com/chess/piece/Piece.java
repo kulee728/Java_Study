@@ -22,6 +22,10 @@ public class Piece {
 		}
 			
 	}//말을 새로운 위치로 이동
+
+	public char toChar() {
+		return ' ';
+	}
 	
 	
 }

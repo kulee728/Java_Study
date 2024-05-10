@@ -1,6 +1,6 @@
 package com.chess.client;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import com.chess.settings.Board;
 import com.chess.settings.Player;
@@ -9,7 +9,7 @@ public class Game {
 	private Player [] players;
 	private Board board;
 	private Player currentPlayer;
-	Scanner sc = new Scanner(System.in);
+	java.util.Scanner sc = new java.util.Scanner(System.in);
 	
 	public void consoleCleaner() {
 		for(int i =0;i<50;i++)
@@ -29,6 +29,11 @@ public class Game {
 		consoleCleaner();
 		while(!checkmate()) {
 			System.out.println("----------Board Status----------");
+			board.printBoard();
+			
+			
+			
+			
 			
 			switchPlayer();
 		}
